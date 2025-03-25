@@ -17,18 +17,34 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.menu-2 {
+  width: 100%;
+  background-color: rgb(19, 128, 223);
+  padding: 1rem 3rem;
+  margin: auto;
+}
+
 nav {
   color: white;
-  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   position: fixed;
-  background-color: rgb(19, 128, 223);
   z-index: 1;
   width: 100%;
   margin-bottom: 50px;
+}
+
+.menu-div {
+  width: 94%;
+  margin: 0 auto;
+  display: flex;
+  background-color: aqua;
+  justify-content: center;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 /* LOGO */
@@ -40,6 +56,7 @@ nav {
 .menu {
   list-style: none;
   display: flex;
+  gap: 20px;
 }
 
 .menu li {
@@ -49,6 +66,8 @@ nav {
 .menu a {
   text-decoration: none;
   color: white;
+  padding: 0.1rem 2rem;
+  background-color: rgb(9, 30, 219);
 }
 
 /* BOTÃO MENU (Hambúrguer) */
@@ -56,7 +75,6 @@ nav {
   display: none;
   font-size: 30px;
   cursor: pointer;
-  margin-right: 21px;
 }
 
 /* segunda sesão */
@@ -64,7 +82,7 @@ nav {
   display: flex;
   width: 100%;
   height: 500 vh;
-  padding: 6rem 0rem 1rem 0rem;
+  padding: 6rem 0rem 0rem 0rem;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -169,17 +187,6 @@ a:hover {
   background-color: rgb(9, 9, 102);
 }
 
-.container2 {
-  display: flex;
-  width: 100%;
-  height: 500 vh;
-  padding: 2rem 0rem;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-}
-
 /* RESPONSIVIDADE PARA TELAS MENORES */
 @media (max-width: 768px) {
   .menu {
@@ -205,3 +212,58 @@ a:hover {
     display: flex;
   }
 }
+/* RESPONSIVIDADE PARA TELAS 320PX header */
+@media (max-width: 320px) {
+  .logo img {
+    margin-left: -35px;
+    margin-right: -10px;
+  }
+}
+@media (max-width: 320px) {
+  .menu-2 {
+    width: 100%;
+    background-color: blue;
+    padding: 1rem 1rem;
+    margin: auto;
+  }
+}
+@media (max-width: 320px) {
+  .menu-2 .logo img {
+    margin-left: -10px;
+  }
+}
+@media (max-width: 320px) {
+  .menu-2 .menu-toggle {
+    margin-right: -10px;
+  }
+}
+
+/* RESPONSIVIDADE TERMINA PARA TELAS 320PX */
+
+/* RESPONSIVIDADE PARA TELAS 375PX header */
+@media (max-width: 375px) {
+  .logo img {
+    margin-left: 35px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .menu-2 {
+    width: 100%;
+    background-color: blue;
+    padding: 1rem 1rem;
+    margin: auto;
+  }
+}
+@media (max-width: 375px) {
+  .menu-2 .logo img {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 375px) {
+  .menu-2 .menu-toggle {
+    margin-right: 20px;
+  }
+}
+
+/* RESPONSIVIDADE TERMINA PARA TELAS 320PX */
